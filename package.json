@@ -34,9 +34,11 @@
     "eslint": "^4.15.0",
     "eslint-config-semistandard": "^12.0.0",
     "eslint-config-standard": "11.0.0-beta.0",
+    "eslint-plugin-compat": "^2.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.0"
+    "eslint-plugin-standard": "^3.0.0",
+    "eslint-plugin-unicorn": "^3.0.1"
   }
 }
