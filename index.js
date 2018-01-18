@@ -12,6 +12,22 @@ config.env = {
   commonjs: true
 };
 
+config.settings = Object.assign({}, config.settings || {}, {
+  browsers: [
+    'last 2 Android versions',
+    'last 5 Chrome versions',
+    'ChromeAndroid >= 54',
+    'last 3 Edge versions',
+    'Explorer >= 11',
+    'last 2 ExplorerMobile versions',
+    'last 3 Firefox versions',
+    'last 2 FirefoxAndroid versions',
+    'iOS >= 8',
+    'Safari >= 8',
+    'Samsung >= 4'
+  ]
+});
+
 config.parserOptions = {
   ecmaVersion: 5,
   sourceType: 'script'
