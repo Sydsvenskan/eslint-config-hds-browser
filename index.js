@@ -36,7 +36,7 @@ config.parserOptions = {
 config.rules = Object.assign({}, config.rules, {
   'no-multi-spaces': ['error', {'ignoreEOLComments': true}],
   // TODO: Make this warning an error in next major version
-  'no-plus-plus': ['warn', {'allowForLoopAfterthoughts': true}],
+  'no-plusplus': ['warn', {'allowForLoopAfterthoughts': true}],
   // TODO: Make this warning an error in next major version
   'no-console': 'warn',
   'unicorn/explicit-length-check': 0,
