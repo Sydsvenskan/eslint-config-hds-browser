@@ -8,6 +8,9 @@ notifications:
   slack:
     on_success: change
     on_failure: always
+    rooms:
+      - secure: >-
+          tZJjz5MmArBopzMwZhFUqNu2vlxJnvP/8J4vp+HhkCLXBdNRHA4j4WQbSVhPdld00NUgajD4OIPWsf0te8dI0ThdVCLO+vIuz6ghd9RdbKO5tfzOSE+7h+0Odq3oGrVdtsUCF/iQPY3xSCe8xOsKksgzsCzFZfV2KxMcwW92fO0JdN85Aalul96prpOeZYddh3tOigSNwhPrj6S5Zh9kBtrXn2oia2wc81HTduYZAL/Sxj/GmL7d3b0vlqYMAOIstF6TkYVr2MSiEZkomngeBsOoyI73S+1Q6zP/rTSpcoz66C+Loxs634IZRAdhA+mrXm9Z0WuSnBYiZK9wHMxNR4N513NPO+LBWZTtocZzuFaCihRBswKwrEA+wBnrhl/qE9MBzmZa84dz7fUMeOfkQTd+AcxS339xGXanORDKfO+kxYzO3FyvY1yegZd5HgS1xB/RrCoB2om1WDoOs60tEq0xtIAN1ijPr7W1hg7v6DJ8094potvsJZ/ACbV+I3MIa73SMNobPUh8zKZnlZBtmjWfUqF+NxBRjhvsyra1wZ8Jx90r2CjNryyALn5uD+v+qgsqv5M33IGvXtyw9WcWeeG4fH4XdflpDNehU2zcxhmC2+lS/3DxijNjFpv/TNe7seyY/iQcz3z2SG5n1zOaQUuciwv+re6s5b98aZyrwOs=
   email: false
 before_install:
   - 'echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc'
