@@ -2,7 +2,7 @@
 
 // Hack around the fact that the es6 environment isn't overrideable in ESLint
 
-const config = Object.assign({}, require('eslint-config-semistandard'));
+const config = Object.assign({}, require('eslint-config-standard'));
 
 config.plugins = [].concat(config.plugins || [], ['unicorn', 'compat']);
 config.extends = [].concat(config.extends || [], 'plugin:unicorn/recommended');
@@ -34,9 +34,11 @@ config.parserOptions = {
 };
 
 config.rules = Object.assign({}, config.rules, {
-  'no-multi-spaces': ['error', {'ignoreEOLComments': true}],
+  'semi': [2, 'always'],
+  'no-extra-semi': 2,
+  'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
   // TODO: Make this warning an error in next major version
-  'no-plusplus': ['warn', {'allowForLoopAfterthoughts': true}],
+  'no-plusplus': ['warn', { 'allowForLoopAfterthoughts': true }],
   // TODO: Make this warning an error in next major version
   'no-console': 'warn',
   'unicorn/explicit-length-check': 0,
