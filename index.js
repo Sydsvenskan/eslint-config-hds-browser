@@ -43,6 +43,7 @@ config.rules = Object.assign({}, config.rules, {
   'no-console': 'warn',
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
+  'unicorn/catch-error-name': ['error', { 'name': 'err' }],
   'compat/compat': 'error'
 });
 
