@@ -1,50 +1,45 @@
 'use strict';
 
-// Hack around the fact that the es6 environment isn't overrideable in ESLint
+// Hack around the fact that environment sisn't overrideable in ESLint
 
 const config = Object.assign({}, require('eslint-config-standard'));
 
-config.plugins = [].concat(config.plugins || [], ['unicorn', 'compat']);
-config.extends = [].concat(config.extends || [], 'plugin:unicorn/recommended');
+config.plugins = [].concat(config.plugins || [], [
+  'unicorn',
+  'compat',
+  'promise',
+  'es'
+]);
+config.extends = [].concat(config.extends || [], [
+  'plugin:unicorn/recommended',
+  'plugin:promise/recommended'
+]);
 
 config.env = {
-  browser: true,
-  commonjs: true
+  es6: true,
+  browser: true
 };
 
-config.settings = Object.assign({}, config.settings || {}, {
-  browsers: [
-    'last 2 Android versions',
-    'last 5 Chrome versions',
-    'ChromeAndroid >= 54',
-    'last 3 Edge versions',
-    'Explorer >= 11',
-    'last 2 ExplorerMobile versions',
-    'last 3 Firefox versions',
-    'last 2 FirefoxAndroid versions',
-    'iOS >= 8',
-    'Safari >= 8',
-    'Samsung >= 4'
-  ]
-});
-
 config.parserOptions = {
-  ecmaVersion: 5,
-  sourceType: 'script'
+  ecmaVersion: 6,
+  sourceType: 'module'
 };
 
 config.rules = Object.assign({}, config.rules, {
   'semi': [2, 'always'],
   'no-extra-semi': 2,
+  'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
   'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
-  // TODO: Make this warning an error in next major version
-  'no-plusplus': ['warn', { 'allowForLoopAfterthoughts': true }],
-  // TODO: Make this warning an error in next major version
+  'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
   'no-console': 'warn',
+  'no-var': 2,
+  'object-shorthand': [2, 'properties'],
+  'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
   'unicorn/prefer-exponentiation-operator': 0,
-  'unicorn/catch-error-name': [1, { 'name': 'err' }],
+  'unicorn/prefer-add-event-listener': 1,
+  'unicorn/prefer-spread': 1,
   'compat/compat': 'error'
 });
 
