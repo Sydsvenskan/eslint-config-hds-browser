@@ -4,6 +4,8 @@ node_js:
   - '10'
   - '8'
 sudo: false
+cache:
+  yarn: true
 notifications:
   slack:
     on_success: change
@@ -11,7 +13,7 @@ notifications:
     on_pull_requests: false
     rooms:
       - secure: >-
-          docm/lYLmkSpZoSKbRGgZe4ikNj3h/o1mmzR+RkGAyg89+tWAYPZ612uV1EXzNeXzDv+oZE9EM1b7E6gJJu0S8nCUeM4kX2t5ooaFqT9ymt3ZGPOSwzYNJl+pQFgweDDS+CzZ7Fe28FcVJOjCiJwNM+fDb6ejF469Z9aT45AK5P41NRVmyGBk+az/olysp/NGSqFcQyQ64Q2CtUAARpMTiudd5KIoTKug5k+0xyaZmg5F4/JyiDtuazSbOuGR6N5Zp43dO5ZWCLWYzas0uLueGFyKg3nWv64T5/S7oB45rY5PtJ1kA51OIVN65/Xg3TWBVxjtuCgWX0N+Bj9XyPVqeOPvvRe30jJu7CPgjhhWzKCMj7UtnnCpGGgaDiSwP7zX3jjOig+XkDEdYWsZcufWpQ+xL1c+djA3dLP5vpf5DQ2u2ehSTAkNEP82JLNJWuQ56umjjzl5Ll+dZBSald9YbWxGiEprFdmmQEHkRv0rod32gL8JE3w3DgygbgwKZbpDDgv7qhZbIBDAHszb3LoMn3LfVhzWE1JGmWhBjmNSUKUYsxOVnFMqjaPDFrCVzx5b7WvBAFbAfhI5zdkWgZYSmH+hKenstzQsgOhi/vhc4X1PEZrFSO0iUNFVNVL4ZVj2kqwMFQ2Fnt2VfOWPzlOKAsKThQb0aPYI/d1G7c2Scc=
+          LLPxUXaZTO8X2lTWsmJpC1SnwnYMLDCzjygQyVg6yt7NzewuXmvAf8pdeS9DZkl1V/if+XocBCqit8cwh2I+js7ESriqzlDqEenAXIXmnFrdquEkEhAwv/Lz29zRsyGjZ2he5cX7yiFkz8dwsdnFhpRLwI8tfvxG+8pm0rW0nScddzEgTd9nvq++D4HsSLZFRGs8UwIXfDpvvyZ9xapmAeIXD+os1qtk+sqmjBlhJnjDyc+jp7RiCeegrHEzjlb7AH8N9IVL6IoiER93C8OxMo73yvaJ9xTBQftksx1DDhLf9fzTHsKzJdmu5mxyIIFqhA1+k0zzuQblZZBVFYdTHGF120fI0xkR0+KsKjTKi46+F0L/LFno8UFq+x630VR6vUDNHEr47LTy5K6AzGPfuG7SwqLg/2+VwmHegi6NuKjZoFSPK1wsRf8COScQdakuK7nKAT/cXV8PemOpu3tz85mE3zgASuHS/7yER5QwGvP1D80YPkz3gaqFIRKgVfwPuOH/M9bcL5wWIigPaXVJk/+QDt7j7iGw3T7+dTuNjM0ft2vnJkAP+h77eKMkaBeIpzbja2MrLaLrAOB++v9ZQzybWFHMsPSqWf5d+O2u1tk9JGzc/P7eFiiGYUl7vaJnRESVYaRNddzw5I/2t5IOhfu1KN7FIZ+PrVzrsSK9Zo4=
   email: false
 before_install:
   - 'echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc'
