@@ -40,6 +40,7 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/prefer-exponentiation-operator': 0,
   'unicorn/prefer-add-event-listener': 1,
   'unicorn/prefer-spread': 1,
+  'unicorn/prefer-node-append': 1,
   'compat/compat': 'error'
 });
 
