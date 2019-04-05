@@ -41,6 +41,7 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/prefer-add-event-listener': 1,
   'unicorn/prefer-spread': 1,
   'unicorn/prefer-node-append': 1,
+  'unicorn/prefer-node-remove': 1,
   'unicorn/prefer-includes': 1,
   'unicorn/prevent-abbreviations': 0,
   'compat/compat': 'error'
