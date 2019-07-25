@@ -28,6 +28,7 @@ config.parserOptions = {
 config.rules = Object.assign({}, config.rules, {
   'compat/compat': 'error',
   'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
+  'import/no-deprecated': 1,
   'no-console': 'warn',
   'no-extra-semi': 2,
   'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
