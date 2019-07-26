@@ -41,7 +41,6 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
-  'unicorn/no-for-loop': 0,
   'unicorn/prefer-add-event-listener': 1,
   'unicorn/prefer-exponentiation-operator': 0,
   'unicorn/prefer-includes': 1,
