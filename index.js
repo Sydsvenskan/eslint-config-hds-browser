@@ -27,6 +27,14 @@ config.parserOptions = {
 
 config.rules = Object.assign({}, config.rules, {
   'compat/compat': 'error',
+
+  'jsdoc/check-types': 0,
+  'jsdoc/no-undefined-types': 0,
+  'jsdoc/require-jsdoc': 0,
+  'jsdoc/require-param-description': 0,
+  'jsdoc/require-returns-description': 0,
+  'jsdoc/valid-types': 0,
+
   'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
   'import/no-deprecated': 1,
   'no-console': 'warn',
@@ -38,6 +46,7 @@ config.rules = Object.assign({}, config.rules, {
   'object-shorthand': [2, 'properties'],
   'quote-props': [2, 'as-needed', { 'keywords': true, 'numbers': true, 'unnecessary': false }],
   'semi': [2, 'always'],
+
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
