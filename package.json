@@ -22,7 +22,7 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@hdsydsvenskan/eslint-config-hds": "^13.0.2",
+    "@hdsydsvenskan/eslint-config-hds": "^14.0.0",
     "eslint": "^6.0.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-es": "^2.0.0",
