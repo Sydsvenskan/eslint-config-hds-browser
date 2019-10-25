@@ -48,6 +48,7 @@ config.rules = Object.assign({}, config.rules, {
   'semi': [2, 'always'],
 
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
+  'unicorn/consistent-function-scoping': 0,
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
   'unicorn/prefer-add-event-listener': 1,
