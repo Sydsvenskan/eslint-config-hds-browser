@@ -10,7 +10,7 @@
     "url": "git://github.com/sydsvenskan/eslint-config-hds-browser.git"
   },
   "scripts": {
-    "test": "installed-check -i eslint && eslint --ext .js --ext .jsx ."
+    "test": "installed-check -i eslint && eslint ."
   },
   "husky": {
     "hooks": {
@@ -22,12 +22,13 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@hdsydsvenskan/eslint-config-hds": "^13.0.2",
+    "@hdsydsvenskan/eslint-config-hds": "^14.0.1",
     "eslint": "^6.0.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-es": "^2.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsdoc": "^15.9.2",
+    "eslint-plugin-mocha": "^6.2.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
