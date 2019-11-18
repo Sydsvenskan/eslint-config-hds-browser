@@ -25,6 +25,13 @@ config.parserOptions = {
   sourceType: 'module'
 };
 
+config.settings = Object.assign({}, config.settings, {
+  jsdoc: Object.assign(
+    (config.settings || {}).jsdoc,
+    { mode: 'typescript' }
+  )
+});
+
 config.rules = Object.assign({}, config.rules, {
   'compat/compat': 'error',
 
