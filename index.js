@@ -27,7 +27,8 @@ config.parserOptions = {
 
 config.settings = Object.assign({}, config.settings, {
   jsdoc: Object.assign(
-    (config.settings || {}).jsdoc,
+    {},
+    (config.settings || {}).jsdoc || {},
     { mode: 'typescript' }
   )
 });
