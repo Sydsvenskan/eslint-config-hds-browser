@@ -66,7 +66,8 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/prefer-node-remove': 1,
   'unicorn/prefer-reflect-apply': 0,
   'unicorn/prefer-spread': 1,
-  'unicorn/prevent-abbreviations': 0
+  'unicorn/prevent-abbreviations': 0,
+  'unicorn/regex-shorthand': 0
 });
 
 module.exports = config;
