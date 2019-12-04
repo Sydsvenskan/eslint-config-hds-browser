@@ -64,6 +64,7 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/prefer-includes': 1,
   'unicorn/prefer-node-append': 1,
   'unicorn/prefer-node-remove': 1,
+  'unicorn/prefer-query-selector': 0,
   'unicorn/prefer-reflect-apply': 0,
   'unicorn/prefer-spread': 1,
   'unicorn/prevent-abbreviations': 0,
