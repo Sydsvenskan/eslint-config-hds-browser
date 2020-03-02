@@ -3,7 +3,7 @@
   "version": "10.1.0",
   "license": "UNLICENSED",
   "description": "HD-Sydsvenskan eslint sharable config base on semistandard",
-  "author": "Pelle Wessman <pelle.wessman@hdsydsvenskan.se>",
+  "author": "HD-Sydsvenskan <webtech@hdsydsvenskan.se>",
   "homepage": "https://github.com/sydsvenskan/eslint-config-hds-browser",
   "repository": {
     "type": "git",
