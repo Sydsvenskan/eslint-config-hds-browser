@@ -40,6 +40,7 @@ config.rules = Object.assign({}, config.rules, {
   'jsdoc/no-undefined-types': 0,
   'jsdoc/require-jsdoc': 0,
   'jsdoc/require-param-description': 0,
+  'jsdoc/require-property-description': 0,
   'jsdoc/require-returns-description': 0,
   'jsdoc/valid-types': 0,
 
@@ -57,7 +58,10 @@ config.rules = Object.assign({}, config.rules, {
 
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/consistent-function-scoping': 0,
-  'unicorn/expiring-todo-comments': [1, { 'ignoreDatesOnPullRequests': true }],
+  'unicorn/expiring-todo-comments': [1, {
+    'allowWarningComments': true,
+    'ignoreDatesOnPullRequests': true
+  }],
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
   'unicorn/prefer-add-event-listener': 1,
