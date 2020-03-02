@@ -57,18 +57,20 @@ config.rules = Object.assign({}, config.rules, {
 
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/consistent-function-scoping': 0,
+  'unicorn/expiring-todo-comments': [1, { 'ignoreDatesOnPullRequests': true }],
   'unicorn/explicit-length-check': 0,
   'unicorn/no-fn-reference-in-iterator': 0,
   'unicorn/prefer-add-event-listener': 1,
-  'unicorn/prefer-exponentiation-operator': 0,
   'unicorn/prefer-includes': 1,
+  'unicorn/prefer-modern-dom-apis': 1,
   'unicorn/prefer-node-append': 1,
   'unicorn/prefer-node-remove': 1,
   'unicorn/prefer-query-selector': 0,
   'unicorn/prefer-reflect-apply': 0,
+  'unicorn/prefer-replace-all': 0,
   'unicorn/prefer-spread': 1,
   'unicorn/prevent-abbreviations': 0,
-  'unicorn/regex-shorthand': 0
+  'unicorn/regex-shorthand': [1, { 'sortCharacterClasses': false }]
 });
 
 module.exports = config;

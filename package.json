@@ -17,36 +17,39 @@
       "pre-push": "npm test"
     }
   },
+  "publishConfig": {
+    "access": "restricted"
+  },
   "engines": {
     "node": ">=10.0.0"
   },
   "main": "index.js",
   "devDependencies": {
-    "@hdsydsvenskan/eslint-config-hds": "^16.0.1",
+    "@hdsydsvenskan/eslint-config-hds": "^17.0.0-3",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-es": "^2.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsdoc": "^18.4.3",
+    "eslint-plugin-es": "^3.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.0",
     "eslint-plugin-mocha": "^6.2.2",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-unicorn": "^14.0.1",
-    "husky": "^3.1.0",
+    "eslint-plugin-unicorn": "^16.1.1",
+    "husky": "^4.2.3",
     "installed-check": "^3.0.0"
   },
   "peerDependencies": {
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-compat": "^3.0.0",
-    "eslint-plugin-es": "^2.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsdoc": "^18.4.3",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-es": "^3.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-unicorn": "^14.0.1"
+    "eslint-plugin-unicorn": "^16.1.1"
   }
 }
