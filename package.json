@@ -1,6 +1,6 @@
 {
   "name": "@hdsydsvenskan/eslint-config-hds-browser",
-  "version": "10.1.0",
+  "version": "11.0.0-0",
   "license": "UNLICENSED",
   "description": "HD-Sydsvenskan eslint sharable config base on semistandard",
   "author": "HD-Sydsvenskan <webtech@hdsydsvenskan.se>",
