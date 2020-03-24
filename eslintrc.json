@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "compat"
+  ],
+  "extends": [
+    "standard",
+    "@hdsydsvenskan/eslint-config-hds-core"
+  ],
+  "rules": {
+    "compat/compat": "error",
+    "unicorn/no-fn-reference-in-iterator": 0,
+    "unicorn/prefer-includes": 1,
+    "unicorn/prefer-node-append": 1,
+    "unicorn/prefer-node-remove": 1,
+    "unicorn/prefer-query-selector": 0,
+    "unicorn/prefer-reflect-apply": 0
+  }
+}
