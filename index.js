@@ -36,6 +36,8 @@ config.settings = Object.assign({}, config.settings, {
 config.rules = Object.assign({}, config.rules, {
   'compat/compat': 'error',
 
+  'import/no-deprecated': 1,
+
   'jsdoc/check-types': 0,
   'jsdoc/no-undefined-types': 0,
   'jsdoc/require-jsdoc': 0,
@@ -45,7 +47,6 @@ config.rules = Object.assign({}, config.rules, {
   'jsdoc/valid-types': 0,
 
   'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
-  'import/no-deprecated': 1,
   'no-console': 'warn',
   'no-extra-semi': 2,
   'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
