@@ -25,7 +25,8 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@hdsydsvenskan/eslint-config-hds": "^18.0.0",
+    "@hdsydsvenskan/eslint-config-hds": "^19.0.0-1",
+    "@hdsydsvenskan/eslint-config-hds-core": "^1.0.0",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-es": "^3.0.0",
@@ -41,15 +42,13 @@
     "installed-check": "^3.0.0"
   },
   "peerDependencies": {
+    "@hdsydsvenskan/eslint-config-hds-core": "^1.0.0",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-compat": "^3.0.0",
-    "eslint-plugin-es": "^3.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^22.0.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-unicorn": "^17.2.0"
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
