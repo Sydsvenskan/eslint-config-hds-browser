@@ -86,7 +86,7 @@ config.rules = Object.assign({}, config.rules, {
   'unicorn/prefer-replace-all': 0,
   'unicorn/prefer-spread': 1,
   'unicorn/prevent-abbreviations': 0,
-  'unicorn/regex-shorthand': [1, { 'sortCharacterClasses': false }]
+  'unicorn/better-regex': [1, { 'sortCharacterClasses': false }]
 });
 
 module.exports = config;
