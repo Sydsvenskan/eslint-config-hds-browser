@@ -34,6 +34,9 @@ config.settings = Object.assign({}, config.settings, {
 });
 
 config.rules = Object.assign({}, config.rules, {
+  'semi': [2, 'always'],
+  'no-extra-semi': 2,
+
   'compat/compat': 'error',
 
   'import/no-deprecated': 1,
@@ -46,16 +49,24 @@ config.rules = Object.assign({}, config.rules, {
   'jsdoc/require-returns-description': 0,
   'jsdoc/valid-types': 0,
 
+  'comma-dangle': [2, {
+    'arrays': 'ignore',
+    'objects': 'ignore',
+    'imports': 'ignore',
+    'exports': 'ignore',
+    'functions': 'never'
+  }],
   'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
-  'no-console': 'warn',
-  'no-extra-semi': 2,
-  'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
-  'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+  'no-console': 1,
+  'no-multi-spaces': [2, { 'ignoreEOLComments': true }],
+  'no-plusplus': [2, { 'allowForLoopAfterthoughts': true }],
   'no-unused-vars': [2, { 'args': 'after-used', 'ignoreRestSiblings': true }],
   'no-var': 2,
+  'no-warning-comments': [1, { 'terms': ['fixme'] }],
   'object-shorthand': [2, 'properties'],
   'quote-props': [2, 'as-needed', { 'keywords': true, 'numbers': true, 'unnecessary': false }],
-  'semi': [2, 'always'],
+  'quotes': [2, 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
+  'require-atomic-updates': 2,
 
   'unicorn/catch-error-name': [1, { 'name': 'err' }],
   'unicorn/consistent-function-scoping': 0,
