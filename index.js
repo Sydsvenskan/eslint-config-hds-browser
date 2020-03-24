@@ -49,7 +49,7 @@ config.rules = Object.assign({}, config.rules, {
   'jsdoc/require-returns-description': 0,
   'jsdoc/valid-types': 0,
 
-  'comma-dangle': [2, {
+  'comma-dangle': [1, {
     'arrays': 'ignore',
     'objects': 'ignore',
     'imports': 'ignore',
@@ -59,7 +59,6 @@ config.rules = Object.assign({}, config.rules, {
   'func-style': [1, 'expression', { 'allowArrowFunctions': true }],
   'no-console': 1,
   'no-multi-spaces': [2, { 'ignoreEOLComments': true }],
-  'no-plusplus': [2, { 'allowForLoopAfterthoughts': true }],
   'no-unused-vars': [2, { 'args': 'after-used', 'ignoreRestSiblings': true }],
   'no-var': 2,
   'no-warning-comments': [1, { 'terms': ['fixme'] }],
