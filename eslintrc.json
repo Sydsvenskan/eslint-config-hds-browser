@@ -6,6 +6,10 @@
     "standard",
     "@hdsydsvenskan/eslint-config-hds-core"
   ],
+  "env": {
+    "browser": true,
+    "node": false
+  },
   "rules": {
     "compat/compat": "error",
     "unicorn/no-fn-reference-in-iterator": 0,
