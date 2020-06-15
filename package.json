@@ -42,7 +42,7 @@
     "installed-check": "^3.0.0"
   },
   "peerDependencies": {
-    "@hdsydsvenskan/eslint-config-hds-core": "^2.0.1",
+    "@hdsydsvenskan/eslint-config-hds-core": "^2.0.2",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-compat": "^3.0.0",
